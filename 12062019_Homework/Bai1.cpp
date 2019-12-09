@@ -7,7 +7,11 @@ int main ()
 	scanf ("%d",&a);
 	scanf ("%d",&b);
 	if (a >= b){
-		printf("Ket qua la %f \n", float(a)/float(b));
+		if (b==0){
+			printf(" a khong chia cho 0 duoc \n"); // Luc dau, thieu truong hop b =0
+		}else {
+			printf("Ket qua la %f \n", float(a)/float(b));
+		}
 	} else {	
 	printf ("Ket qua la %d \n",(a*b));}
 	return 0;
