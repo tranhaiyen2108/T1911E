@@ -5,11 +5,12 @@ int main ()
 	printf ("Nhap vao so n muon doan nguoc \n");
 	printf ("n = ");
     scanf("%d", &n);
-   for (int reverse_n = 0; n >0; n/10){
+    int z;
+   for (z = 0; n >0; n/10){
         m = n % 10;
-        reverse_n = reverse_n * 10 + m;
+        z = z * 10 + m;
         n = n / 10;
     }
-    printf("%d", reverse_n);
+    printf("%d", z);
     return 0;
 }
