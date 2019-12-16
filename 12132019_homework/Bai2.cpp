@@ -14,7 +14,7 @@ int main ()
 	}
 	int tong, dem;
 	tong = dem =0;
-	for (int i =0; i<n; ++i){
+	for (int i =1; i<n; ++i){
 		if ((i%2==0)&&(ary[i]%2!=0)){
 			dem = dem +1;
 			tong = tong + ary[i];
