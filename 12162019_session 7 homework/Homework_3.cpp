@@ -1,55 +1,50 @@
-//Nhap vào 2 ma tran 4x3, Cong tru 2 ma tran và in ra ket qua.
+//Bai 3:
+//Cong hai mang vao voi nhau 
+
 #include <stdio.h>
+
 int main()
 {
-	int a[4][3],b[4][3],c[4][3];
-	int i,j;
-	printf("Nhap vao ma tran so 1: 4 x3\n");
-	for (i = 0; i <4; i++){
-		for (j =0; j<3;j++){
-			printf ("a[%d][%d] = ", i,j);
+	int a[4][3], b[4][3], c[4][3];
+	int i, j;
+    printf ("Nhap vao ma tran a\n");
+    for (i = 0; i < 4; i++) {
+		for (j = 0; j < 3; j++) {
+			printf("Nhap a[%d][%d] =",i,j);
 			scanf("%d",&a[i][j]);
 		}
-		printf("\n");
 	}
-	printf ("Mang vua nhap vao la: \n");
-	for (i =0; i<4; i++){
-		for (j =0; j<3; j++){
-		printf ("%d\t", a[i][j]);
-		}
-		printf("\n");
+	printf("nhap vao ma tran a\n") ;
+	for (i = 0; i < 4; i++) {
+		for (j = 0; j < 3; j++) {
+			printf("%d\t",a[i][j]); 
+		}printf ("\n");
 	}
-	printf("Nhap vao ma tran so 2: 4 x3\n");
-	for (i = 0; i <4; i++){
-		for (j =0; j<3;j++){
-			printf ("a[%d][%d] = ", i,j);
+	printf("Nhap vao ma tran b\n") ;
+	for (i = 0; i < 4; i++) {
+		for (j = 0; j < 3; j++) {
+			printf("Nhap b[%d][%d] =",i,j);
 			scanf("%d",&b[i][j]);
 		}
-		printf("\n");
-	}printf ("Mang vua nhap vao la: \n");
-	for (i =0; i<4; i++){
-		for (j =0; j<3; j++){
-			printf ("%d\t", b[i][j]);
-		}
-		printf("\n");
 	}
-	printf("Nhap vao sau khi cong la:\n");
-	for (i = 0; i <4; i++){
-		for (j =0; j<3;j++){
-			c[i][j]= 0;
-			for (int x = 0; x<4;x++){
-				for (int y =0; y<3; y++){
-					c[i][j] = a[i][j] + b[i][j];
-				}
-			}
+	printf("Ma tran b moi nhap vao la\n") ;
+	for (i = 0; i < 4; i++) {
+		for (j = 0; j < 3; j++) {
+			printf ("%d\t",b[i][j]);
+		}printf("\n");
+	}printf("\n");
+	
+	for (i = 0; i < 4; i++) {
+		for (j = 0; j < 3; j++) {
+			c[i][j] = a[i][j] + b[i][j];
 		}
 	}
-	printf("Ma tran sau cong:\n");
-    for(i=0;i<4;j++){ 
-        for(j=0;j<3;j++){
-            printf("%d",c[i][j]);
-        }
-        printf("\n");
-    }
-	return 0;
+	printf( "Mang a cong mang b la\n"); 
+	for (i = 0; i < 4; i++) {
+		for (j = 0; j < 3; j++) {
+			printf("%d\t", c[i][j]) ;
+		}printf("\n");
+	}    
+
+    return 0;
 }
