@@ -5,7 +5,7 @@
 
 int main()
 {
-	int a[4][3], b[4][3], c[4][3];
+	int a[4][3], b[4][3], c[4][3], d[4][3] ;
 	int i, j;
     printf ("Nhap vao ma tran a\n");
     for (i = 0; i < 4; i++) {
@@ -14,7 +14,7 @@ int main()
 			scanf("%d",&a[i][j]);
 		}
 	}
-	printf("nhap vao ma tran a\n") ;
+	printf("Ma tran a vua nhap la \n") ;
 	for (i = 0; i < 4; i++) {
 		for (j = 0; j < 3; j++) {
 			printf("%d\t",a[i][j]); 
@@ -37,6 +37,7 @@ int main()
 	for (i = 0; i < 4; i++) {
 		for (j = 0; j < 3; j++) {
 			c[i][j] = a[i][j] + b[i][j];
+			d[i][j] = a[i][j] - b[i][j];
 		}
 	}
 	printf( "Mang a cong mang b la\n"); 
@@ -44,7 +45,12 @@ int main()
 		for (j = 0; j < 3; j++) {
 			printf("%d\t", c[i][j]) ;
 		}printf("\n");
-	}    
-
+	}       
+	printf( "Mang a tru mang b la\n"); 
+	for (i = 0; i < 4; i++) {
+		for (j = 0; j < 3; j++) {
+			printf("%d\t", d[i][j]) ;
+		}printf("\n");
+	}   	
     return 0;
 }
