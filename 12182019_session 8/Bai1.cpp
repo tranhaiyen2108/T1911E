@@ -12,10 +12,8 @@ bool kiemtra(int a[], unsigned int n, int x){
     for (int i =0; i<n; i++){
         if (a[i]==x) {
             return true;
-        }else {
-            return false;
         }
-    }
+    }return false;
 }
 
 
@@ -26,7 +24,7 @@ int main()
     nhapmang (a,5);
     int x;
     printf("Nhap vao so x = ");
-    scanf ("%d\n",&x);
+    scanf ("%d",&x);
     if (kiemtra(a,5,x)){
         printf ("%d co trong mang\n",x); 
     }else {
