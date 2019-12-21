@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 int timkiem(int a[][4], unsigned int n){
-    int x = 0, max = 0;
+    int max;
     int vitri;
-    for (int j = 0; j <4; j++){
-    		max =max + a[0][j];
-		}
-	//	return max;
     for (int i =0; i< n;++i){
+    	int x = 0;
         for (int j = 0; j< 4; ++j){
             x = x +a[i][j];
+            if(i==0){
+			max = x;
+			} 
             if (x > max){
                 max =x;  
                 vitri=i; 
