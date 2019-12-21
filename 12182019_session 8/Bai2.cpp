@@ -13,11 +13,11 @@ int timkiem(unsigned int n){
     	x = 2;
     	return x;
 	}else if (n>=4 ){
-        int x1=1, x2 = 2;
+        int x1=1, x2 = 1; x=2;
         for (int i =4; i<= n; i++){
-			x = x1+x2;
-            x1 = x2;    
+			x1 = x2;    
             x2 = x;
+            x = x1+x2;
         }
     } return x;
         
