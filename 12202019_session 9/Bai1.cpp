@@ -12,17 +12,17 @@ int main() {
         printf(" Nhap vao ten hoc sinh thu %d: ",i+1);
         scanf("%s",array[i]);
     }
-    char s[50],d[50];
+    char s[50];
     printf ("Nhap vao mot ten de kiem tra: ");
     scanf("%s",s);
-	for (int i = 0;i<n;i++){
+    int i =0;
+	for (i = 0;i<n;i++){
 		if (strcmp(array[i],s)==0){
-			strcpy(array[i],d);
+			printf("Ten %s co nam trong chuoi",s);
+			break;
 		}
 	}
-	if (strcmp(d,s)==0){
-	printf("Ten %s co nam trong chuoi",s);
-	}else {
+	if (i>=n){ //Neu chuoi s khong trong chuoi, thi khi den day, i = i+1; tuc la i >=n
 	printf("Ten %s khong co nam trong chuoi",s);
 	}
 	
